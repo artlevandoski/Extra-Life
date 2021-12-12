@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     //public int score; 
     public static float score;
 
-    private bool isGrounded;
+    private bool isGrounded = true;
 
     public UI uI;
 
@@ -40,13 +40,13 @@ public class Player : MonoBehaviour
         Vector3 vel = rig.velocity;
         vel.y = 0;
 
-        // of we're moving, rotate to face our moving direction
+        // if we're moving, rotate to face our moving direction
         if (vel.x != 0 || vel.z != 0)
         {
             transform.forward = vel;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && isGrounded ==true)
+        if(Input.GetKeyDown(KeyCode.Space) || (Input.GetKeyDown(KeyCode.Joystick1Button0) && isGrounded ==true))
         {
             isGrounded = false;
             rig.AddForce(Vector3.up * jumpforce, ForceMode.Impulse);
