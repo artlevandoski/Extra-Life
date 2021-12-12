@@ -2852,7 +2852,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b72e1ed6ec034449a67c16d0fd459e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinsToCollect: 100
+  coinsToCollect: 1
+  eternalCoinsToCollect: 100
+  coinsCollected: 0
   showEternalCoins: 0
   showExit: 0
 --- !u!114 &521596874

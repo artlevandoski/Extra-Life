@@ -8,7 +8,11 @@ public class GameManager : MonoBehaviour
 
     //use GameManager.* to access this script
 
-    public int coinsToCollect = 100;
+    public float coinsToCollect = 100;
+
+    public int eternalCoinsToCollect = 100;
+
+    public float coinsCollected;
 
     public bool showEternalCoins = false;
 
@@ -18,6 +22,20 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
     }
+
+     //updates the car positions
+    void Update ()
+    {
+        if(coinsCollected == coinsToCollect)
+            showEternalCoins = true;
+
+        if(coinsCollected == coinsToCollect)
+            showExit = true;
+
+
+    }
+
+    
 
   
 }
