@@ -8,6 +8,11 @@ public class EndFlag : MonoBehaviour
     public string nextSceneName;
     public bool lastLevel;
 
+    void Start ()
+    {
+        gameObject.SetActive(false);
+    }
+    
     private void OnTriggerEnter(Collider other)
     
     {
@@ -24,7 +29,7 @@ public class EndFlag : MonoBehaviour
         }
 
     }
- 
+      
 
-  
+
 }

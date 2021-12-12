@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public bool showEternalCoins = false;
 
     public bool showExit = false;
+
+    public GameObject EndFlag;
     
     void Awake()
     {
@@ -24,14 +26,13 @@ public class GameManager : MonoBehaviour
     }
 
      //updates the car positions
-    void Update ()
+    void Update()
     {
         if(coinsCollected == coinsToCollect)
             showEternalCoins = true;
 
         if(coinsCollected == coinsToCollect)
-            showExit = true;
-
+            EndFlag.SetActive(true);    
 
     }
 

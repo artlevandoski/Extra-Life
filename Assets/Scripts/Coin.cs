@@ -20,7 +20,7 @@ public class Coin : MonoBehaviour
         if (other.CompareTag ("Player"))
         {
             //adds coin points to player score upon collection
-            //PlayerScore.score += pointsPerCoin;
+            PlayerScore.score += pointsPerCoin;
             GameManager.instance.coinsCollected += pointsPerCoin;
             Destroy(gameObject);
         }

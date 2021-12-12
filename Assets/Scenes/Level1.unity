@@ -11871,7 +11871,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9128508576933548888, guid: 4446ddeb630a6864f96ccc9cdfd5d38c, type: 3}
       propertyPath: m_Name
-      value: End Flag
+      value: EndFlag
+      objectReference: {fileID: 0}
+    - target: {fileID: 9128508576933548888, guid: 4446ddeb630a6864f96ccc9cdfd5d38c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9128508576933548889, guid: 4446ddeb630a6864f96ccc9cdfd5d38c, type: 3}
       propertyPath: m_Size.x
