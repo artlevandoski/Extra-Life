@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!135 &641340756
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2677574678023476621}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &641340757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2677574678023476621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d66ef3eb969df8f4d9ec332d780e9ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 180
+  eternalScore: 0
+  EternalPoints: 1
 --- !u!1 &4074576681921878322
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,10 +37,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4074576681921878323}
-  - component: {fileID: 4955381543826118218}
   m_Layer: 0
   m_Name: Eternal Coin
-  m_TagString: Untagged
+  m_TagString: Eternal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,18 +59,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4955381543826118218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4074576681921878322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d66ef3eb969df8f4d9ec332d780e9ebe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4074576681924440274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -136,5 +151,10 @@ PrefabInstance:
 --- !u!4 &4540038104250013497 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4e3f2cfcb9cd00c479858aee4a7b53e4, type: 3}
+  m_PrefabInstance: {fileID: 4074576681924440274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2677574678023476621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2135667320269940063, guid: 4e3f2cfcb9cd00c479858aee4a7b53e4, type: 3}
   m_PrefabInstance: {fileID: 4074576681924440274}
   m_PrefabAsset: {fileID: 0}

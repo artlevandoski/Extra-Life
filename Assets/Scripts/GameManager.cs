@@ -14,11 +14,17 @@ public class GameManager : MonoBehaviour
 
     public float coinsCollected;
 
+    public float eternalCoinsCollected;
+
     public bool showEternalCoins = false;
 
     public bool showExit = false;
 
     public GameObject EndFlag;
+
+    public GameObject _EternalCoins;
+
+    
     
     void Awake()
     {
@@ -32,7 +38,11 @@ public class GameManager : MonoBehaviour
             showEternalCoins = true;
 
         if(coinsCollected == coinsToCollect)
-            EndFlag.SetActive(true);    
+            EndFlag.SetActive(true);
+
+        if(coinsCollected == coinsToCollect)
+            _EternalCoins.SetActive(true);
+             
 
     }
 
