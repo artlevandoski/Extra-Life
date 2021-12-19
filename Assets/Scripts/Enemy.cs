@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
+
 {
     public float speed;
     public Vector3 moveDirection;
@@ -40,8 +41,12 @@ public class Enemy : MonoBehaviour
            if(transform.position == startPos + (moveDirection * moveDistance))
            {
                movingToStart = true;
+               
            }
+                  
        } 
+
+       
     }
 
     //ends the game when the player collides with an enemey

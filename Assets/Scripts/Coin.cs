@@ -9,7 +9,9 @@ public class Coin : MonoBehaviour
     //point amount for collecting coins
     public float pointsPerCoin = 1;
 
-    void Update()
+    public AudioClip coin;
+
+        void Update()
     {
        //the rotation of the coins
        transform.Rotate(Vector3.up, rotateSpeed * Time.deltaTime); 
@@ -22,6 +24,7 @@ public class Coin : MonoBehaviour
             //adds coin points to player score upon collection
             PlayerScore.score += pointsPerCoin;
             GameManager.instance.coinsCollected += pointsPerCoin;
+            AudioSource.PlayClipAtPoint(coin, transform.position);
             Destroy(gameObject);
         }
     }

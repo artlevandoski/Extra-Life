@@ -10,6 +10,6 @@ public class UI : MonoBehaviour
    void Update()
    {
        //tracking for the player coin score
-       scoreText.text = "Coins: " + PlayerScore.score;
+       scoreText.text = "" + PlayerScore.score;
    }
 }

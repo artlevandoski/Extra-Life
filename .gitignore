@@ -72,3 +72,6 @@ crashlytics-build.properties
 Assets/_KUBIKOS - People/
 Assets/_KUBIKOS - World/
 Assets/_SimpleCollectiblesPack/
+*.wav
+*.mp3
+*.png
