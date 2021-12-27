@@ -7048,6 +7048,18 @@ PrefabInstance:
       propertyPath: uI
       value: 
       objectReference: {fileID: 284653589626679554}
+    - target: {fileID: 8825247435110473419, guid: ee56dd6ad8c287b44bf32fb0e7d9f1d6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826118799618656096, guid: ee56dd6ad8c287b44bf32fb0e7d9f1d6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826638300667730454, guid: ee56dd6ad8c287b44bf32fb0e7d9f1d6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee56dd6ad8c287b44bf32fb0e7d9f1d6, type: 3}
 --- !u!1001 &9128508577565709594
