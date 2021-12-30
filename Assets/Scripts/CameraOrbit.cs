@@ -5,11 +5,12 @@ using UnityEngine;
 public class CameraOrbit : MonoBehaviour
 {
   public float lookSensitivity;
-  public float minXLook;
-  public float maxXLook;
+  public float minYLook;
+  public float maxYLook;
+
   public Transform camAnchor;
   public bool invertXRotation;
-  private float curXRot;
+  private float curYRot;
 
   void Start()
   {
@@ -27,16 +28,11 @@ public class CameraOrbit : MonoBehaviour
       transform.eulerAngles += Vector3.up * x * lookSensitivity;
 
       //camera up and down look functionality
-      // if else statement to determine invert status, dont need {} if only one statement
-        if(invertXRotation)
-            curXRot += y * lookSensitivity;
-        else
-            curXRot -= y * lookSensitivity;
      
-      curXRot = Mathf.Clamp(curXRot, minXLook, maxXLook);
+      curYRot = Mathf.Clamp(curYRot, minYLook, maxYLook);
 
       Vector3 clampedAngle = camAnchor.eulerAngles;
-      clampedAngle.x = curXRot;
+      clampedAngle.x = curYRot;
 
       camAnchor.eulerAngles = clampedAngle; 
   }
