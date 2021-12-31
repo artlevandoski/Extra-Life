@@ -21,7 +21,8 @@ public class CameraOrbit : MonoBehaviour
   void LateUpdate()
   {
       //get the mouse x and y inputs
-      float x = Input.GetAxis("Mouse X");
+      //float x = Input.GetAxis("Mouse X");
+      float x = Input.GetAxis("4th Axis");
       float y = Input.GetAxis("Mouse Y");
 
       //rotate the player horizontally 
