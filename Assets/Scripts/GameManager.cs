@@ -10,39 +10,44 @@ public class GameManager : MonoBehaviour
 
     public float coinsToCollect = 100;
 
-    public int eternalCoinsToCollect = 100;
-
     public float coinsCollected;
 
-    public float eternalCoinsCollected;
+    public float eternalToCollect = 100;
 
-    public bool showEternalCoins = false;
+    public float eternalCollected;
 
     public bool showExit = false;
 
-    public GameObject EndFlag;
+    public bool showEternal = false;
 
-    public GameObject _EternalCoins;
+    public GameObject ExitPortal;
 
-    
-    
+    public GameObject EternalCoin;
+
+           
     void Awake()
     {
         instance = this;
     }
 
-     //updates the car positions
     void Update()
     {
         if(coinsCollected == coinsToCollect)
-            showEternalCoins = true;
+            {
+                showExit = true;
+                showEternal = true;
+            }
 
-        if(coinsCollected == coinsToCollect)
-            EndFlag.SetActive(true);
-
-        if(coinsCollected == coinsToCollect)
-            _EternalCoins.SetActive(true);
-             
+        if(showExit == true)
+            {
+                ExitPortal.SetActive(true);
+            }
+            
+        if(showEternal == true)
+            {
+                EternalCoin.SetActive(true);
+            }
+            
 
     }
 

@@ -11,7 +11,7 @@ public class Coin : MonoBehaviour
 
     public AudioClip coin;
 
-        void Update()
+    void Update()
     {
        //the rotation of the coins
        transform.Rotate(Vector3.up, rotateSpeed * Time.deltaTime); 

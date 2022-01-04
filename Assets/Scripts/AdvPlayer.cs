@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AdvPlayer : MonoBehaviour
 
@@ -54,6 +55,7 @@ public class AdvPlayer : MonoBehaviour
         dir.y = rig.velocity.y;
 
         rig.velocity = dir;
+
     }
 
     void UpdateAnimator ()
@@ -89,7 +91,17 @@ public class AdvPlayer : MonoBehaviour
             isGrounded = false;
             deBug.text = "Not Grounded";
         }
+
+         if(transform.position.y < -10) //ends the game if player falls too far
+        {
+            GameOver();
+        }
         
+    }
+
+     public void GameOver()
+    {
+        SceneManager.LoadScene(2);
     }
 
 

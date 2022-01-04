@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour
    //starts the game
    public void OnPlayButton()
    {
-       SceneManager.LoadScene(1);
+       SceneManager.LoadScene(0);
    }
 
    //quits the game when in executable form
