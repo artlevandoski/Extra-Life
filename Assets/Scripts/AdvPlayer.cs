@@ -44,7 +44,7 @@ public class AdvPlayer : MonoBehaviour
     
     void Move()
     {
-        float x = Input.GetAxis("Horizontal");
+       float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded ==true || (Input.GetKeyDown(KeyCode.Joystick1Button0) && isGrounded ==true)) jump = true;
